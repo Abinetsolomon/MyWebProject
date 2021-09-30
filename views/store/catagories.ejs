@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h11, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" src="/jquery-3.3.1.min.js"></script>
+    <!-- <link rel="stylesheet" href="/all.css"> -->
+    <!-- Bootstrap core CSS -->
+    <link href="/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="/mdb.min.css" rel="stylesheet">
+</head>
+<body>
+   
+    <div class="container">
+            <div class="row">
+       <div class="card-group ">
+            <% data.map(item=>{ %>
+                <div class="card m-1 justify-content"style="width: 18rem;" >
+                <img src="/images/abinet.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><%=item.brand  %></h5>
+                  <p class="card-text"><%=item.model  %></p>
+                  <a href="#" class="btn btn-primary btn-sm">Go somewhere</a>
+                </div>
+              </div>
+           <% }) %> 
+       </div>
+                   
+                       
+                </div>
+    </div>
+    
+  <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="/mdb.min.js"></script>   
+</body>
+</html>
